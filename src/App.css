@@ -5,6 +5,7 @@
 
 .App {
   font-family: 'Nunito';
+  font-size: 14px;
   text-align: center;
   min-height: 100vh;
 }

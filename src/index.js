@@ -6,11 +6,15 @@ import reportWebVitals from './reportWebVitals';
 import './assets/fonts/Nunito/Nunito-VariableFont_wght.ttf';
 import 'react-toastify/dist/ReactToastify.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { appStore } from './stores';
+import { Provider } from 'react-redux';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={appStore}>
+      <App />
+    </Provider>
   </React.StrictMode>
 );
 
